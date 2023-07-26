@@ -12,6 +12,7 @@
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- tailwind utility customization -->
   <script>
     tailwind.config = {
@@ -38,12 +39,13 @@
   </style>
 </head>
 
+
 <body class="font-lato">
   <header>
     <!---------------------------- nav section ------------------------->
     <nav class="container w-auto  md:mx-4 sm:lg:mx-auto  mt-12">
       <div class="navbar md:bg-primary-bg rounded-[600px]  md:py-5 lg:py-7 lg:px-12">
-        <!--nav start -->
+        <!--navbar start -->
         <div class="navbar-start">
           <div class="dropdown ">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -67,12 +69,12 @@
             <li><a>All Fruits</a></li>
           </ul>
         </div>
-        <!--nav center -->
+        <!--navbar center -->
         <div class="navbar-center  ">
           <img src="./images/logo.png" alt="">
           <a class="btn btn-ghost normal-case text-2xl  md:text-4xl  font-bold text-black md:text-white">Fruit Burst</a>
         </div>
-        <!--nav end -->
+        <!--navbar end -->
         <div class="navbar-end   hidden md:inline-flex border-collapse">
           <div class="form-control w-full max-w-xs relative">
             <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-[50px]" />
@@ -85,7 +87,8 @@
     </nav>
 
     <!---------------------------banner section ------------------------>
-    <section class="container rounded-lg md:w-auto  md:mx-4  md:px-0 lg:mx-auto mt-12 relative flex justify-center px-3">
+    <section
+      class="container rounded-lg md:w-auto  md:mx-4  md:px-0 lg:mx-auto mt-12 relative flex justify-center px-3">
       <!--banner slides -->
       <div class="carousel rounded-lg w-full min-h-[260px] md:h-[600px]">
         <div id="slide1" class="carousel-item relative w-full h-full">
@@ -153,7 +156,8 @@
           </div>
         </div>
       </div>
-      <!-- fruits variant -->
+
+      <!-- fruits categories -->
       <div
         class="fruits absolute hidden md:flex items-center justify-center bg-white md:gap-4 lg:gap-24 md:px-8 lg:px-20 md:mx-8 lg:mx-0 md:py-6 lg:py-14 rounded-lg  -bottom-[25%] shadow-customize-shadow">
         <div class="text-center"><img src="./images/fruit1.png" class="mb-3" alt="">
@@ -175,19 +179,21 @@
     </section>
   </header>
 
+
   <main>
     <!-----------------------deal of the day section ------------------->
     <section class="container md:w-auto md:mx-4  sm:lg:mx-auto mt-12 md:mt-64">
-<!-- heading -->
+      <!-- heading -->
       <div class=" lg:flex text-center lg:text-start px-3 lg:px-0 justify-between items-center">
-        <!-- deal of the day text -->
+        <!-- deal of the day heading text -->
         <div>
           <h3 class="text-5xl font-extrabold mb-6">Deal of the day</h3>
-          <p class="text-[#12121299] font-medium mb-7 lg:mb-0">Contrary to popular belief, is not simply random text. It has roots in
+          <p class="text-[#12121299] font-medium mb-7 lg:mb-0">Contrary to popular belief, is not simply random text. It
+            has roots in
             a
             piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <!-- deal of the day countdown  -->
+        <!-- deal of the day countdown part -->
         <div>
           <div class="grid grid-flow-col justify-center items-center gap-4 md:gap-9 text-center auto-cols-max ">
             <div class="flex flex-col ">
@@ -237,7 +243,7 @@
 
       <!-- deal of the day cards -->
       <div class="mt-12 mb-12 grid  mx-3 md:mx-4 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:mx-0">
-        <!-- single card -->
+        <!-- single card apple-->
         <div class="card  bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl mb-12" />
@@ -295,7 +301,7 @@
           </div>
         </div>
 
-        <!-- single card -->
+        <!-- single card orange-->
         <div class="card bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl mb-12" />
@@ -351,9 +357,9 @@
               </dialog>
             </div>
           </div>
-        </div> 
+        </div>
 
-        <!-- single card -->
+        <!-- single card red dragon-->
         <div class="card bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl mb-12" />
@@ -411,7 +417,7 @@
           </div>
         </div>
 
-        <!-- single card -->
+        <!-- single card banana-->
         <div class="card  bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl mb-12" />
@@ -477,21 +483,20 @@
       </div>
 
     </section>
-  
-
 
     <!----------------------- meet the team section -------------------->
-    <section class="w-auto rounded-lg mt-24 hero py-16  container mx-3 md:w-auto md:mx-5 lg:mx-auto bg-black bg-opacity-50 bg-blend-overlay bg-cover"
+    <section
+      class="w-auto rounded-lg mt-24 hero py-16  container mx-3 md:w-auto md:mx-5 lg:mx-auto bg-black bg-opacity-50 bg-blend-overlay bg-cover"
       style="background-image: url(./images/team.png);">
       <div class="hero-content  text-neutral-content  flex flex-col justify-center items-center text-center">
-        <!--heading texts -->
+        <!----texts part ---->
         <div>
           <h2 class="text-2xl md:text-5xl font-extrabold mb-2 md:mb-6">Meet the team section</h2>
           <p class="text-sm md:text-xl font-medium mb-4 md:mb-8">Contrary to popular belief, is not simply random text.
             It
             has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <!-- members information-->
+        <!-- members information part-->
         <div class="grid  gap-9 md:grid-cols-2 lg:grid-cols-4  md:gap-24 items-center mt-6">
 
           <div class="flex flex-col justify-center items-center">
@@ -542,20 +547,18 @@
       </div>
     </section>
 
-
     <!-- --------------------why choose us section ------------------ -->
     <section class="container mx-auto mt-24 px-3 md:px-0">
-      <!-- heading -->
+      <!---- heading part ---->
       <h2 class="text-5xl font-extrabold mb-6 text-center">Why Choose Us</h2>
       <p class="text-[#12121299] font-medium text-center mb-12">Contrary to popular belief, is not simply random text.
         It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-      <!-- --buisness theme -->
+      <!----why choose us section features --->
       <div class="grid lg:grid-cols-3  gap-2">
 
-        <!---------- left-container ------->
+        <!---------- left side container ------->
         <div class="flex-1 flex flex-col justify-between order-2 lg:order-1 ">
-          <!-- single theme -->
-         
+          <!--  feature -->
           <div class="flex flex-col lg:flex-row justify-center items-center gap-4 mb-4">
             <div class="h-14 w-14 border-2 rounded-full text-gray-500 flex justify-center items-center bg-[#12121219]">
               <i class="fa-solid fa-user-group"></i>
@@ -568,7 +571,7 @@
                 fruits.</p>
             </div>
           </div>
-          <!-- single theme -->
+          <!--  feature -->
           <div class="flex flex-col lg:flex-row justify-center items-center gap-4 mb-4">
             <div class="h-14 w-14 border-2 rounded-full text-gray-500 flex justify-center items-center bg-[#12121219]">
               <i class="fa-solid fa-heart-circle-check"></i>
@@ -581,7 +584,7 @@
                 fruits.</p>
             </div>
           </div>
-          <!-- single theme -->
+          <!--  feature -->
           <div class="flex flex-col lg:flex-row justify-center items-center gap-4 mb-4">
             <div class="h-14 w-14 border-2 rounded-full text-gray-500 flex justify-center items-center bg-[#12121219]">
               <i class="fa-solid fa-gift"></i>
@@ -594,17 +597,16 @@
                 fruits.</p>
             </div>
           </div>
-        
-      </div>
-    
+        </div>
+
         <!--------------- img container -------------->
         <div class="flex-1 order-1 mx-auto lg:order-2 mb-4 lg:mb-0">
           <img src="./images/whychoose1.png" alt="">
         </div>
 
-        <!--------------- right container ------------>
+        <!--------------- right side container ------------>
         <div class="flex-1 flex flex-col justify-between order-3 ">
-          <!-- single theme -->
+          <!--  feature -->
           <div class="flex flex-col-reverse lg:flex-row  justify-center items-center gap-4 mb-4">
             <div class="flex flex-col gap-3 items-center text-center lg:items-end lg:text-end">
               <h3 class="text-2xl font-extrabold">Integrated Supplier</h3>
@@ -617,7 +619,7 @@
               <i class="fa-solid fa-apple-whole"></i>
             </div>
           </div>
-          <!-- single theme -->
+          <!--  feature -->
           <div class="flex flex-col-reverse lg:flex-row  justify-center items-center gap-4 mb-4">
             <div class="flex flex-col gap-3 items-center text-center lg:items-end lg:text-end">
               <h3 class="text-2xl font-extrabold">Sustainable Practice</h3>
@@ -630,7 +632,7 @@
               <i class="fa-solid fa-ice-cream"></i>
             </div>
           </div>
-          <!-- single theme -->
+          <!--  feature -->
           <div class="flex flex-col-reverse lg:flex-row  justify-center items-center gap-4 mb-4">
             <div class="flex flex-col gap-3 items-center text-center lg:items-end lg:text-end">
               <h3 class="text-2xl font-extrabold">The Benefits Only</h3>
@@ -645,7 +647,6 @@
           </div>
         </div>
       </div>
-
       </div>
     </section>
 
