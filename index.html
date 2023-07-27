@@ -45,23 +45,9 @@
     <!---------------------------- nav section ------------------------->
     <nav class="container w-auto  md:mx-4 sm:lg:mx-auto  mt-12">
       <div class="navbar md:bg-primary-bg rounded-[600px]  md:py-5 lg:py-7 lg:px-12">
-        <!--navbar start -->
-        <div class="navbar-start">
-          <div class="dropdown ">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </label>
-            <ul tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
-            </ul>
-          </div>
+
+        <!-- navbar start -->
+        <div class="navbar-start hidden  lg:flex">
           <ul class="menu menu-horizontal hidden lg:flex px-1 text-white">
             <li><a>Home</a></li>
             <li><a>About Us</a></li>
@@ -69,23 +55,48 @@
             <li><a>All Fruits</a></li>
           </ul>
         </div>
-        <!--navbar center -->
+        <!-- navbar center -->
         <div class="navbar-center  ">
           <img src="./images/logo.png" alt="">
           <a class="btn btn-ghost normal-case text-2xl  md:text-4xl  font-bold text-black md:text-white">Fruit Burst</a>
         </div>
-        <!--navbar end -->
-        <div class="navbar-end   hidden md:inline-flex md:mr-4 lg:mr-0 border-collapse">
-          <div class="form-control w-full max-w-xs relative">
+        <!-- navbar end -->
+        <div class="navbar-end">
+          <div class="form-control w-full max-w-xs relative hidden lg:flex">
             <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-[50px]" />
-            <div class="absolute h-full flex items-center right-7">
+            <button class="btn btn-ghost absolute h-full flex items-center right-1 rounded-full">
               <i class=" fa-solid fa-magnifying-glass"></i>
-            </div>
+            </button>
           </div>
-
+          <div class="dropdown  dropdown-left ">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+              <li>
+                <div class="form-control w-full h-auto max-w-xs relative  ">
+                  <input type="text" placeholder="Search here"
+                    class="input input-bordered w-full max-w-xs rounded-[50px]" />
+                  <div class="absolute h-full flex items-center right-7">
+                    <i class=" fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
+
+      </div>
     </nav>
 
+    
     <!---------------------------banner section ------------------------>
     <section
       class="container rounded-lg md:w-auto  md:mx-4  md:px-0 lg:mx-auto mt-12 relative flex justify-center px-3">
